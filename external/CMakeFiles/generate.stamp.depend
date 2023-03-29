@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/ogl-master/external/CMakeLists.txt
+D:/CMake/share/cmake-3.26/Modules/CheckFunctionExists.cmake
+D:/CMake/share/cmake-3.26/Modules/CheckIncludeFile.cmake
+D:/CMake/share/cmake-3.26/Modules/CheckIncludeFileCXX.cmake
+D:/CMake/share/cmake-3.26/Modules/CheckTypeSize.cmake

@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4829784E-C4B8-3D9A-965D-4F1389624F99}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\AntTweakBar-1.16\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glfw-3.1.2\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glm-0.9.7.1;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glew-1.13.0\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\assimp-3.0.1270\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\bullet-2.81-rev2613\src;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\AntTweakBar-1.16\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glfw-3.1.2\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glm-0.9.7.1;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glew-1.13.0\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\assimp-3.0.1270\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\bullet-2.81-rev2613\src;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\AntTweakBar-1.16\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glfw-3.1.2\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glm-0.9.7.1;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glew-1.13.0\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\assimp-3.0.1270\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\bullet-2.81-rev2613\src;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\AntTweakBar-1.16\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glfw-3.1.2\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glm-0.9.7.1;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\glew-1.13.0\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\assimp-3.0.1270\include;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\bullet-2.81-rev2613\src;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/ogl-master" "-BD:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/Projet" --check-stamp-file "D:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/Projet/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeCCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeCXXCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeRCCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeSystem.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/ogl-master" "-BD:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/Projet" --check-stamp-file "D:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/Projet/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeCCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeCXXCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeRCCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeSystem.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/ogl-master" "-BD:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/Projet" --check-stamp-file "D:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/Projet/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeCCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeCXXCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeRCCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeSystem.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/ogl-master" "-BD:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/Projet" --check-stamp-file "D:/.ECN/.COURS/EI2 (Réalité Virtuelle)/COARV/Projet/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeCCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeCXXCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeRCCompiler.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\3.26.1\CMakeSystem.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\ZERO_CHECK.vcxproj">
+      <Project>{41C9F6A8-57FE-3570-9A41-9BA79D9ED162}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\ANTTWEAKBAR_116_OGLCORE_GLFW.vcxproj">
+      <Project>{D7CBB278-42EA-3753-A9E9-693257E81514}</Project>
+      <Name>ANTTWEAKBAR_116_OGLCORE_GLFW</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\bullet-2.81-rev2613\src\BulletCollision\BulletCollision.vcxproj">
+      <Project>{23D76820-DCB6-3C0A-9108-EFADDDDFD58D}</Project>
+      <Name>BulletCollision</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\bullet-2.81-rev2613\src\BulletDynamics\BulletDynamics.vcxproj">
+      <Project>{4CCA0036-903D-3211-9AF6-1863B0EFDC2E}</Project>
+      <Name>BulletDynamics</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\bullet-2.81-rev2613\src\BulletSoftBody\BulletSoftBody.vcxproj">
+      <Project>{FF29871E-60AE-3419-B3A2-C8EC2000ACB1}</Project>
+      <Name>BulletSoftBody</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\GLEW_1130.vcxproj">
+      <Project>{3235577E-7624-3F91-9A6A-22A432223DFD}</Project>
+      <Name>GLEW_1130</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\bullet-2.81-rev2613\src\LinearMath\LinearMath.vcxproj">
+      <Project>{5E82D23C-ED72-3F66-8CBA-07C6A9A01045}</Project>
+      <Name>LinearMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\assimp-3.0.1270\code\assimp.vcxproj">
+      <Project>{D549C3BF-F27A-3E3E-BC8E-0D1CC8E5C2B1}</Project>
+      <Name>assimp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\examples\boing.vcxproj">
+      <Project>{35CC5550-6B43-352B-A24F-EB6F86D8545E}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\clipboard.vcxproj">
+      <Project>{64ED8494-8CA5-34EF-B680-E196BF6C1534}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\cursor.vcxproj">
+      <Project>{9B404D93-BF4F-3A29-8FD3-7E9D9A1E0683}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\empty.vcxproj">
+      <Project>{99AE1452-97CD-3BF7-8F94-3F07617816DB}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\events.vcxproj">
+      <Project>{13D0FBEB-F6DD-3AA2-BF49-79558B8B85C9}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\gamma.vcxproj">
+      <Project>{288C3DCE-25B2-36E0-8993-8B0FE2239767}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\examples\gears.vcxproj">
+      <Project>{9BC645D4-D9EA-37BD-A171-869F7A6B7BD2}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\src\glfw.vcxproj">
+      <Project>{5FE3C6B4-0C92-3CE3-8D93-246DB27EA5BA}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\glfwinfo.vcxproj">
+      <Project>{D34E816E-FED6-3705-9696-0493D89D3902}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\examples\heightmap.vcxproj">
+      <Project>{E3F959FF-FFE8-37CA-BD09-2BD8524CB463}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\iconify.vcxproj">
+      <Project>{2EFB1131-E8A1-32E1-9FBD-499B168B4607}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\joysticks.vcxproj">
+      <Project>{8DD99D76-CEAB-3333-B566-6E5123F806AE}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\misc05_picking_BulletPhysics.vcxproj">
+      <Project>{7042DF66-9B81-35C3-87C6-C71E1EEA37B4}</Project>
+      <Name>misc05_picking_BulletPhysics</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\misc05_picking_custom.vcxproj">
+      <Project>{990C8E0C-9565-3D69-BA10-7384C8A2AA0F}</Project>
+      <Name>misc05_picking_custom</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\misc05_picking_slow_easy.vcxproj">
+      <Project>{E94BAB4F-E597-383C-9895-A140321DA8F8}</Project>
+      <Name>misc05_picking_slow_easy</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\monitors.vcxproj">
+      <Project>{64BBCF62-C2A8-3EDC-AD3C-7FFC4016BB13}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\msaa.vcxproj">
+      <Project>{5FA89CDB-2157-3DDC-AFA0-44E8BFF6C5D0}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\examples\particles.vcxproj">
+      <Project>{5A05ED00-0EA0-35AB-A390-5B568996F458}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\playground.vcxproj">
+      <Project>{A5D5A533-4C7C-385F-BD35-03366A96756A}</Project>
+      <Name>playground</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\reopen.vcxproj">
+      <Project>{0EEE0040-114B-3FDB-A09A-C728B6A5AD7D}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\sharing.vcxproj">
+      <Project>{801B1389-E894-3C81-BE0E-DE5233B3D7C8}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\examples\simple.vcxproj">
+      <Project>{CF1B0938-9E0D-3F2B-9CEB-B1FD89FCDBFE}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\examples\splitview.vcxproj">
+      <Project>{AFB3D164-2B0F-3290-B37A-D6E82F8EA7CE}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\tearing.vcxproj">
+      <Project>{D9D0B5F9-9D22-3834-B7E6-565F0587DCA9}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\threads.vcxproj">
+      <Project>{13983CFC-456A-369B-8261-93B55875A747}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\title.vcxproj">
+      <Project>{D4BCA7B0-09EC-31A4-B445-A16460B23A8F}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial01_first_window.vcxproj">
+      <Project>{4C7CDD99-0811-3C4F-992A-7D7CF15575B3}</Project>
+      <Name>tutorial01_first_window</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial02_red_triangle.vcxproj">
+      <Project>{4A77F363-46CE-39BD-9A70-D0DE1D9747B2}</Project>
+      <Name>tutorial02_red_triangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial03_matrices.vcxproj">
+      <Project>{AAC5F35F-EFDB-30EA-A225-6E0840AB48A7}</Project>
+      <Name>tutorial03_matrices</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial04_colored_cube.vcxproj">
+      <Project>{3C581BD4-53BF-3331-BD87-80257567E6A6}</Project>
+      <Name>tutorial04_colored_cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial05_textured_cube.vcxproj">
+      <Project>{6B73D909-220B-3803-B37B-86B62A4EE8C0}</Project>
+      <Name>tutorial05_textured_cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial06_keyboard_and_mouse.vcxproj">
+      <Project>{E6065364-4E2B-3D3F-9D5D-8A910F420698}</Project>
+      <Name>tutorial06_keyboard_and_mouse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial07_model_loading.vcxproj">
+      <Project>{9A0D6968-819E-3B61-9813-CCC8D541ADA9}</Project>
+      <Name>tutorial07_model_loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial08_basic_shading.vcxproj">
+      <Project>{1A9549C2-1AA4-3535-B5FF-5E5CD44DB588}</Project>
+      <Name>tutorial08_basic_shading</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial09_AssImp.vcxproj">
+      <Project>{47941F36-538F-3EDF-9E84-05B487BEC1F7}</Project>
+      <Name>tutorial09_AssImp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial09_several_objects.vcxproj">
+      <Project>{D87FC145-6184-31F2-B51C-8AC40F497929}</Project>
+      <Name>tutorial09_several_objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial09_vbo_indexing.vcxproj">
+      <Project>{8B4350A5-95B3-3E7B-9E80-D041AD380532}</Project>
+      <Name>tutorial09_vbo_indexing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial10_transparency.vcxproj">
+      <Project>{BEF52620-198D-3DA4-BF94-FF296C7AD317}</Project>
+      <Name>tutorial10_transparency</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial11_2d_fonts.vcxproj">
+      <Project>{DB1C059B-77EF-3961-8A04-66FFB262FDB9}</Project>
+      <Name>tutorial11_2d_fonts</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial12_extensions.vcxproj">
+      <Project>{7C170340-8DBA-3CDD-99E6-D5DF7ABD63A8}</Project>
+      <Name>tutorial12_extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial13_normal_mapping.vcxproj">
+      <Project>{AC9BFD89-E146-3840-BCFA-D0E6C60659BA}</Project>
+      <Name>tutorial13_normal_mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial14_render_to_texture.vcxproj">
+      <Project>{95D3B90E-F103-3FF4-9D13-651C6BC6D68B}</Project>
+      <Name>tutorial14_render_to_texture</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial15_lightmaps.vcxproj">
+      <Project>{D7DC7E1A-0E9F-3E51-A041-8C418BDC0719}</Project>
+      <Name>tutorial15_lightmaps</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial16_shadowmaps.vcxproj">
+      <Project>{22DF8534-B008-3AB8-AB29-868DB1977682}</Project>
+      <Name>tutorial16_shadowmaps</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial16_shadowmaps_simple.vcxproj">
+      <Project>{F0DB7ADA-8B7A-3622-9BB9-8BD168080F28}</Project>
+      <Name>tutorial16_shadowmaps_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial17_rotations.vcxproj">
+      <Project>{45DE6076-455B-33D6-ABFA-E2E7E288FE7B}</Project>
+      <Name>tutorial17_rotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial18_billboards.vcxproj">
+      <Project>{C52A8B54-1F49-3871-AD27-56C6BEEABE18}</Project>
+      <Name>tutorial18_billboards</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\tutorial18_particles.vcxproj">
+      <Project>{C0CFF285-F0DE-3801-B553-89FC5A3AEDAB}</Project>
+      <Name>tutorial18_particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\examples\wave.vcxproj">
+      <Project>{43F99F00-2047-3A2D-B195-A047530F4CDC}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\glfw-3.1.2\tests\windows.vcxproj">
+      <Project>{0C28C140-E55A-3C3F-9634-2EAE5575E681}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\external\assimp-3.0.1270\contrib\zlib\zlib.vcxproj">
+      <Project>{BD9D6E88-0D75-3328-867C-F0383A156B1E}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

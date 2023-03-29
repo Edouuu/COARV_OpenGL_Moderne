@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\Projet\CMakeFiles\a637add9199bc14b099a3f45c08dd326\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{12DCB106-A097-34D0-8FB0-DABF0D2EF148}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

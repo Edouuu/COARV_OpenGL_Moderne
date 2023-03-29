@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\tutorial16_shadowmaps\tutorial16_SimpleVersion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\common\shader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\common\controls.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\common\texture.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\common\objloader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\common\vboindexer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\common\shader.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\common\controls.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\common\texture.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\common\objloader.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\common\vboindexer.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\tutorial16_shadowmaps\ShadowMapping_SimpleVersion.vertexshader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\tutorial16_shadowmaps\ShadowMapping_SimpleVersion.fragmentshader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\tutorial16_shadowmaps\DepthRTT.vertexshader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="D:\.ECN\.COURS\EI2 (Réalité Virtuelle)\COARV\ogl-master\tutorial16_shadowmaps\DepthRTT.fragmentshader">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BAFE4A1A-02B1-3B29-89C7-1E98CAAFDAAB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{CDAF278A-C68D-3812-B2D4-D6EB784B4035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{5E51815D-3B7A-33C8-B8B4-FA5F9FBE9E54}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
